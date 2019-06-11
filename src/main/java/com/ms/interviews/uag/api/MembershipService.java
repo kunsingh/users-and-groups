@@ -1,4 +1,4 @@
-package com.atlassian.interviews.uag.api;
+package com.ms.interviews.uag.api;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Collection;

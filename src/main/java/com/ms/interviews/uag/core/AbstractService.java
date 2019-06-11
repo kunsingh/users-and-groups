@@ -1,4 +1,4 @@
-package com.atlassian.interviews.uag.core;
+package com.ms.interviews.uag.core;
 
 public abstract class AbstractService {
     protected final Services services;

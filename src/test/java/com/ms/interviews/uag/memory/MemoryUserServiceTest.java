@@ -1,10 +1,9 @@
-package com.atlassian.interviews.uag.memory;
+package com.ms.interviews.uag.memory;
 
-import com.atlassian.interviews.uag.api.User;
-import com.atlassian.interviews.uag.api.UserService;
-import com.atlassian.interviews.uag.core.ServiceFactory;
-import com.atlassian.interviews.uag.core.Services;
-import com.atlassian.interviews.uag.memory.MemoryUserService;
+import com.ms.interviews.uag.api.User;
+import com.ms.interviews.uag.api.UserService;
+import com.ms.interviews.uag.core.ServiceFactory;
+import com.ms.interviews.uag.core.Services;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

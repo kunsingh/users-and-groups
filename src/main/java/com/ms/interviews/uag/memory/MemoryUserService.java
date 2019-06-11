@@ -1,9 +1,9 @@
-package com.atlassian.interviews.uag.memory;
+package com.ms.interviews.uag.memory;
 
-import com.atlassian.interviews.uag.api.User;
-import com.atlassian.interviews.uag.api.UserService;
-import com.atlassian.interviews.uag.core.AbstractService;
-import com.atlassian.interviews.uag.core.Services;
+import com.ms.interviews.uag.api.User;
+import com.ms.interviews.uag.api.UserService;
+import com.ms.interviews.uag.core.AbstractService;
+import com.ms.interviews.uag.core.Services;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

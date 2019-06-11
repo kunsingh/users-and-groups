@@ -1,7 +1,6 @@
-package com.atlassian.interviews.uag.api;
+package com.ms.interviews.uag.api;
 
 import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import static java.util.Objects.requireNonNull;
