@@ -71,17 +71,6 @@ public class MemoryMembershipNestedGroupsTest {
         membershipService.addGroupToGroup(null, PEOPLE);
     }
 
-    @Ignore("TODO - Inheritance isn't working yet")
-    @Test
-    public void addGroupToGroup_duplicate() {
-        membershipService.addGroupToGroup(HACKERS, PEOPLE);
-        membershipService.addGroupToGroup(HACKERS, PEOPLE);
-        assertTrue("george is a hacker, and hackers are people", membershipService.isUserInGroup(GEORGE, PEOPLE));
-
-        membershipService.removeGroupFromGroup(HACKERS, PEOPLE);
-        assertFalse("one remove is good enough", membershipService.isUserInGroup(GEORGE, PEOPLE));
-    }
-
     @Test
     public void testIsGroupInGroup_yes() {
         assertTrue("hackers are people", membershipService.isGroupInGroup(HACKERS, PEOPLE));
@@ -106,12 +95,6 @@ public class MemoryMembershipNestedGroupsTest {
         membershipService.removeGroupFromGroup(null, PEOPLE);
     }
 
-    @Ignore("TODO - Inheritance isn't working yet")
-    @Test
-    public void removeUserFromGroup_indirect() {
-        membershipService.removeUserFromGroup(GEORGE, PEOPLE);
-        assertTrue("did not remove the indirect membership", membershipService.isUserInGroup(GEORGE, PEOPLE));
-    }
 
     @Test
     public void removeGroupFromGroup_removed() {
@@ -131,12 +114,6 @@ public class MemoryMembershipNestedGroupsTest {
         assertTrue("george is a hacker", membershipService.isUserInGroup(GEORGE, HACKERS));
         assertFalse("fred is not a hacker", membershipService.isUserInGroup(FRED, HACKERS));
         assertFalse("george is not an admin", membershipService.isUserInGroup(GEORGE, ADMINS));
-    }
-
-    @Ignore("TODO - Inheritance isn't working yet")
-    @Test
-    public void testInheritedMembership() {
-        assertTrue("george is a hacker, and hackers are people", membershipService.isUserInGroup(GEORGE, PEOPLE));
     }
 
     @Test
